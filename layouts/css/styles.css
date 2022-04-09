@@ -807,6 +807,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-10{
   height: 2.5rem;
 }
+.h-12{
+  height: 3rem;
+}
 .w-full{
   width: 100%;
 }
@@ -829,6 +832,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .w-4\/5{
   width: 80%;
+}
+.w-12{
+  width: 3rem;
 }
 .max-w-\[50\%\]{
   max-width: 50%;
