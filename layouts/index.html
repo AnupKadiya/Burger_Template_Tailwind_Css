@@ -7,7 +7,8 @@
     <title>Tailwind Css Example</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='../main.css'>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="../layouts/css/styles.css">
 </head>
@@ -83,29 +84,27 @@
                             aria-current="page">Home</a>
                     </li>
                     <li>
-                        <a href="#"
-                            class="block py-2 pr-4 pl-3 text-white  border-b border-red hover:text-red md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 hover:border-b hover:border-red tracking-wider">About</a>
+                        <a href="#our_chef"
+                            class="block py-2 pr-4 pl-3 text-white  border-b border-red hover:text-red md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 hover:border-b hover:border-red tracking-wider">Our
+                            chef</a>
                     </li>
                     <li>
-                        <a href="#"
-                            class="block py-2 pr-4 pl-3  border-b border-red hover:text-red md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 hover:border-b hover:border-red tracking-wider">Services</a>
+                        <a href="#stat"
+                            class="block py-2 pr-4 pl-3  border-b border-red hover:text-red md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 hover:border-b hover:border-red tracking-wider">statistics</a>
                     </li>
                     <li>
-                        <a href="#"
-                            class="block py-2 pr-4 pl-3  border-b border-red hover:text-red md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 hover:border-b hover:border-red tracking-wider">Pricing</a>
+                        <a href="#pop_package"
+                            class="block py-2 pr-4 pl-3  border-b border-red hover:text-red md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 hover:border-b hover:border-red tracking-wider">Popular
+                            package</a>
                     </li>
                     <li>
-                        <a href="#"
+                        <a href="#contact" id="contact"
                             class="block py-2 pr-4 pl-3   border-red hover:text-red md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 hover:border-b hover:border-red tracking-wider">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-
-
-
-
     <!-- main section -->
     <section class="relative ">
         <img src="../images/main-banner.png" alt="" class="w-full h-auto ">
@@ -133,11 +132,8 @@
 
         </div>
     </section>
-
     <!-- our chef section -->
-
-
-    <section class="relative">
+    <section class="relative" id="our_chef">
         <div class="bg-cream py-5">
             <div class="container mx-auto px-5 sm:py-10 md:py-20">
                 <div class=" flex flex-col mx-auto justify-center text-center gap-y-5 md:gap-y-10 ">
@@ -208,7 +204,6 @@
             <img src="../images/burger-big-icon.png" alt="" class="sr-only lg:not-sr-only">
         </div>
     </section>
-
     <!-- best burger section -->
     <section>
         <div class="bg-orange py-5 md:py-26 lg:py-32">
@@ -285,7 +280,7 @@
         </div>
     </section>
     <!-- statistics  section -->
-    <section>
+    <section id="stat">
         <div class="bg-orange py-10">
             <div class="sm:container mx-auto px-5">
                 <div class="flex text-center flex-col gap-y-6">
@@ -334,7 +329,7 @@
         </div>
     </section>
     <!-- popular package section -->
-    <section class="relative">
+    <section class="relative" id="pop_package">
         <div class="bg-cream">
             <div class="container mx-auto px-5 py-5 sm:py-10 md:py-16 lg:px-12">
                 <div>
@@ -440,7 +435,6 @@
             <img src="../images/fries-icon.png" alt="" class="sr-only lg:not-sr-only ">
         </div>
     </section>
-
     <!-- barry henderson section -->
     <section>
         <div class="bg-hero-pattern bg-no-repeat bg-cover">
@@ -630,6 +624,61 @@
             </div>
         </div>
     </footer>
+    <!-- contact us form -->
+    <section class="w-3/5 hidden fixed z-50 top-28 left-28" id="contact_us">
+        <div class="flex  bg-white w-full border-2 py-10 px-10 border-red ">
+            <div class="w-9/12 mx-auto inline-flex justify-center text-center gap-1 bg-white">
+                <form class="w-full max-w-lg">
+                    <div class="flex flex-wrap -mx-3 mb-6">
+                        <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                            <label class="block uppercase tracking-wide text-gray-600 text-xs font-bold mb-2"
+                                for="grid-first-name">
+                                First Name
+                            </label>
+                            <input
+                                class="appearance-none block w-full bg-orange text-white border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-gray-1100 placeholder:text-white"
+                                id="grid-first-name" type="text" placeholder="Jane">
+                            <p class="text-red-500 text-xs italic">Please fill out this field.</p>
+                        </div>
+                        <div class="w-full md:w-1/2 px-3">
+                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                                for="grid-last-name">
+                                Last Name
+                            </label>
+                            <input
+                                class="appearance-none block w-full bg-orange text-white border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none  focus:bg-gray-1100 placeholder:text-white"
+                                id="grid-last-name" type="text" placeholder="Doe">
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap -mx-3 mb-6">
+                        <div class="w-full px-3">
+                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                                for="grid-password">
+                                Email
+                            </label>
+                            <input
+                                class="appearance-none block w-full bg-orange text-white border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none  focus:bg-gray-1100 placeholder:text-white"
+                                id="grid-password" type="email" placeholder="Enter Your Mail">
+
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap -mx-3 mb-6">
+                        <div class="w-full px-3">
+
+                            <a class="appearance-none block w-64 cursor-pointer bg-orange text-white border uppercase border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none  focus:bg-gray-1100 placeholder:text-white"
+                                id="grid-password" type="button" href="" placeholder="Enter Your Mail">Submit</a>
+
+                        </div>
+                    </div>
+
+
+                </form>
+            </div>
+            <div class="w-1/4 text-center m-o items-center mx-auto inline-flex justify-center">
+                <img src="../images/burger-1.png" alt="burger-1" class="max-w-full">
+            </div>
+        </div>
+    </section>
     <!-- script -->
     <script>
         function myFunction() {
@@ -647,6 +696,22 @@
 
         }
 
+    </script>
+    <!-- contact-us script -->
+    <script>
+        $(document).ready(function () {
+            $("#contact").click(function () {
+                $("#contact_us").addClass("block");
+                $("#contact_us").toggle(1000);
+            });
+            $(document).mouseup(function (e) {
+                var container = $("#contact_us");
+                if (!container.is(e.target) &&
+                    container.has(e.target).length === 0) {
+                    container.hide();
+                }
+            });
+        });
     </script>
 </body>
 
