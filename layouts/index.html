@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="scroll-smooth">
 
 <head>
     <meta charset='utf-8'>
@@ -101,12 +101,16 @@
                         <a href="#contact" id="contact"
                             class="block py-2 pr-4 pl-3   border-red hover:text-red md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 hover:border-b hover:border-red tracking-wider">Contact</a>
                     </li>
+                    <li>
+                        <a href="#dwnd" id="dwnd"
+                            class="block py-2 pr-4 pl-3   border-red hover:text-red md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 hover:border-b hover:border-red tracking-wider">download</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
     <!-- main section -->
-    <section class="relative ">
+    <section class="relative oppy">
         <img src="../images/main-banner.png" alt="" class="w-full h-auto ">
 
 
@@ -133,7 +137,7 @@
         </div>
     </section>
     <!-- our chef section -->
-    <section class="relative" id="our_chef">
+    <section class="relative oppy" id="our_chef">
         <div class="bg-cream py-5">
             <div class="container mx-auto px-5 sm:py-10 md:py-20">
                 <div class=" flex flex-col mx-auto justify-center text-center gap-y-5 md:gap-y-10 ">
@@ -205,7 +209,7 @@
         </div>
     </section>
     <!-- best burger section -->
-    <section>
+    <section class="oppy">
         <div class="bg-orange py-5 md:py-26 lg:py-32">
             <div class="sm:container mx-auto">
                 <div class="md:flex md:justify-center md:text-left md:items-center">
@@ -234,7 +238,7 @@
         </div>
     </section>
     <!-- big burger section -->
-    <section class="relative">
+    <section class="relative oppy">
         <div class="bg-cream py-5 md:py-26 lg:py-32">
             <div class="container mx-auto px-5">
                 <div class="md:flex  md:justify-center md:text-left  md:items-center">
@@ -280,7 +284,7 @@
         </div>
     </section>
     <!-- statistics  section -->
-    <section id="stat">
+    <section id="stat" class="oppy">
         <div class="bg-orange py-10">
             <div class="sm:container mx-auto px-5">
                 <div class="flex text-center flex-col gap-y-6">
@@ -329,7 +333,7 @@
         </div>
     </section>
     <!-- popular package section -->
-    <section class="relative" id="pop_package">
+    <section class="relative oppy" id="pop_package">
         <div class="bg-cream">
             <div class="container mx-auto px-5 py-5 sm:py-10 md:py-16 lg:px-12">
                 <div>
@@ -436,7 +440,7 @@
         </div>
     </section>
     <!-- barry henderson section -->
-    <section>
+    <section class="oppy">
         <div class="bg-hero-pattern bg-no-repeat bg-cover">
             <div class="container mx-auto px-5 py-10 sm:py-16 md:py-36 lg:py-52">
                 <div class="flex flex-col gap-y-5">
@@ -454,7 +458,7 @@
         </div>
     </section>
     <!-- contact-us section -->
-    <section class="relative">
+    <section class="relative oppy">
         <div class="bg-cream">
             <div class="container mx-auto py-10 px-5 sm:py-20 md:py-32 lg:py-40">
                 <div class="flex flex-col gap-y-5 sm:gap-y-8 md:gap-y-12 text-center">
@@ -505,7 +509,7 @@
         </div>
     </section>
     <!-- footer section -->
-    <footer>
+    <footer class="oppy">
         <div class="bg-black">
             <div class="container px-5 py-5 mx-auto sm:py-10 md:py-16 lg:py-32">
                 <div class="flex flex-wrap gap-5 md:grid md:grid-cols-5 md:flex-nowrap md:gap-16">
@@ -625,8 +629,8 @@
         </div>
     </footer>
     <!-- contact us form -->
-    <section class="w-3/5 hidden fixed z-50 top-28 left-28" id="contact_us">
-        <div class="flex  bg-white w-full border-2 py-10 px-10 border-red ">
+    <section class="w-3/5 hidden fixed z-50 top-1/4 left-[20%]" id="contact_us">
+        <div class="flex  bg-white w-full border-2 pt-10 px-10 border-red ">
             <div class="w-9/12 mx-auto inline-flex justify-center text-center gap-1 bg-white">
                 <form class="w-full max-w-lg">
                     <div class="flex flex-wrap -mx-3 mb-6">
@@ -679,6 +683,47 @@
             </div>
         </div>
     </section>
+    <!-- download form using phone number -->
+    <section class="w-3/5 hidden fixed z-50 top-1/4 left-[20%]" id="download">
+        <div class="flex  bg-white w-full border-2 py-10 px-10 border-red ">
+            <div id="via_sms" class=" flex ">
+                <div class="w-9/12 mx-auto inline-flex justify-center flex-col text-center gap-1 bg-white">
+                    <p class="uppercase text-black text-xl">
+                        enter your phone number to get the link via sms
+                    </p>
+
+                    <form action="">
+                        <div class="flex justify-center mt-3">
+                            <input type="text" class="border rounded-full relative bg-red text-white p-1 px-2 "
+                                maxlength="10" name="" id="">
+                            <a href="#"> <img src="../images/icons8-right-24.png" alt=""
+                                    class="absolute left-[48%] pt-1"></a>
+                        </div>
+
+                    </form>
+                    <p>Get the link via <a href="#" id="qr_code" class="text-gray-50 text-xl">QR CODE</a></p>
+                </div>
+                <div class="w-1/4 text-center m-o items-center mx-auto inline-flex justify-center">
+                    <img src="../images/burger-1.png" alt="burger-1" class="max-w-full">
+                </div>
+            </div>
+            <div id="via_qr" class=" hidden ">
+                <div class="w-9/12 mx-auto inline-flex justify-center flex-col text-center gap-1 bg-white">
+                    <p class="uppercase text-black text-xl">
+                        find out if you’ve made it. scan this QR code.
+                    </p>
+
+
+                    <p>Get the link via <a href="#" id="sms" class="text-gray-50 text-xl">SEND SMS</a></p>
+                </div>
+                <div class="w-1/4 text-center m-o items-center mx-auto inline-flex justify-center">
+                    <img src="../images/qr_code_PNG39.png" alt="burger-1" class="max-w-full" height="181.5px"
+                        width="181.5px">
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- script -->
     <script>
         function myFunction() {
@@ -698,21 +743,71 @@
 
     </script>
     <!-- contact-us script -->
+
     <script>
         $(document).ready(function () {
             $("#contact").click(function () {
                 $("#contact_us").addClass("block");
-                $("#contact_us").toggle(1000);
+                $("#contact_us").toggle();
+                $(".oppy").addClass("opacity-50");
             });
             $(document).mouseup(function (e) {
                 var container = $("#contact_us");
                 if (!container.is(e.target) &&
                     container.has(e.target).length === 0) {
                     container.hide();
+                    $(".oppy").removeClass("opacity-50");
+                }
+                else {
+                    $(".oppy").addClass("opacity-50");
                 }
             });
         });
     </script>
+    <!-- download script -->
+
+    <script>
+        $(document).ready(function () {
+            $("#dwnd").click(function () {
+                $("#download").addClass("block");
+                $("#download").toggle();
+                $(".oppy").addClass("opacity-50");
+            });
+            $(document).mouseup(function (e) {
+                var container = $("#download");
+                if (!container.is(e.target) &&
+                    container.has(e.target).length === 0) {
+                    container.hide();
+                    $(".oppy").removeClass("opacity-50");
+                }
+                else {
+                    $(".oppy").addClass("opacity-50");
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#qr_code").click(function () {
+                $("#via_sms").addClass("hidden");
+                $("via_sms").removeClass("flex")
+                $("#via_qr").addClass("flex");
+                $("#via_qr").removeClass("hidden");
+            });
+            $("#sms").click(function () {
+                $("#via_qr").addClass("hidden");
+                $("via_qr").removeClass("flex")
+                $("#via_sms").addClass("flex");
+                $("#via_sms").removeClass("hidden");
+            });
+        });
+    </script>
+
+
+
+
 </body>
+
+
 
 </html>
